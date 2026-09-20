@@ -1,4 +1,4 @@
-# ShowTime OTT: What Drives First-Day Viewership
+# 🎥 ShowTime OTT: What Drives First-Day Viewership
 
 An OLS regression model that explains first-day content views on ShowTime, an OTT streaming platform. It uses 1,000 titles and 7 predictors: weekly platform visitors, ad impressions, trailer views, release day, season, genre, and whether a major sports event fell on release day.
 
