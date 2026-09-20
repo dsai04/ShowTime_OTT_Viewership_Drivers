@@ -106,15 +106,6 @@ The gap between train and test is small, so there is no sign of overfitting. The
 
 Conclusion: no significant multicollinearity or heteroscedasticity. The dataset has no date column, so Durbin-Watson is only a rough check on independence.
 
-## Limitations
-
-- **Association, not cause.** The data is observational. The model shows what goes with higher or lower views, not what causes them.
-- **All predictors were kept.** The final model still includes ad impressions, genre and Tuesday, none of which are significant. A smaller model without them was not tested.
-- **One train/test split.** Results were not cross-validated.
-- **Skewed trailer views.** The variable is heavily right-skewed and no transformation was tested.
-- **High condition number.** statsmodels reports 1.67e4. All VIFs are below 3, so this most likely comes from the different scales of the variables (ad impressions are in the thousands, dummies are 0 or 1). The features were not standardised to confirm this.
-- **Limited data.** 1,000 titles from a single platform, supplied with the course. How the data was collected is not documented.
-
 ## Repository contents
 
 | File | Description |
